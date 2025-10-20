@@ -1,0 +1,32 @@
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log
+
+# Data files
+data/*.csv
+data/*.zip
+
+# Models
+models/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# System
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
