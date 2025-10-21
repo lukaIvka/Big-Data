@@ -7,3 +7,4 @@ scikit-learn==1.5.1  # Za preprocessing i metriku
 streamlit==1.38.0  # Za UI
 kaggle==1.6.14
 torch==2.3.1
+streamlit==1.38.0
