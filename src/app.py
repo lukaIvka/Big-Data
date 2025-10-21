@@ -54,7 +54,23 @@ ax.set_title('Predikcije vs Stvarne Vrednosti')
 ax.legend()
 st.pyplot(fig)
 
-# Performanse modela
+# Grafikon istorije treniranja
+st.header("Istorija Treniranja (Train/Val Loss)")
+with open('training_history.txt', 'r') as f:
+    lines = f.readlines()
+epochs = [int(line.split('Epoch ')[1].split(',')[0]) for line in lines]  # Ispravljeno parsiranje epohe
+train_loss = [float(line.split('Train Loss: ')[1].split(',')[0]) for line in lines]
+val_loss = [float(line.split('Val Loss: ')[1].strip()) for line in lines]
+fig2, ax2 = plt.subplots(figsize=(10, 6))
+ax2.plot(epochs, train_loss, color='blue', label='Train Loss')
+ax2.plot(epochs, val_loss, color='red', label='Val Loss')
+ax2.set_xlabel('Epohe')
+ax2.set_ylabel('Loss')
+ax2.set_title("Istorija Treniranja")
+ax2.legend()
+ax2.grid(True)
+st.pyplot(fig2)
+
 # Performanse modela u tabeli
 st.header("Performanse Modela")
 data = {
