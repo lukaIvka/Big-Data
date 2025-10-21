@@ -23,4 +23,4 @@ def load_data(file_path: str) -> pd.DataFrame:
         raise
 
 if __name__ == "__main__":
-    load_data("../data/leak_detection.csv")  # Prilagodi putanju ako treba
+    load_data("../data/location_aware_gis_leakage_dataset.csv")  # Prilagodi putanju ako treba

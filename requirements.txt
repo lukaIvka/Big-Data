@@ -6,3 +6,4 @@ seaborn==0.13.2  # Za bolje vizualizacije
 scikit-learn==1.5.1  # Za preprocessing i metriku
 streamlit==1.38.0  # Za UI
 kaggle==1.6.14
+torch==2.3.1

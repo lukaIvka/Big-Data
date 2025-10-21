@@ -30,3 +30,7 @@ models/
 *.bak
 *.tmp
 .DS_Store
+
+# Key 
+api_config.py
+*.key
